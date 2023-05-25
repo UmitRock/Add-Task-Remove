@@ -1,0 +1,169 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 800px;
+	height: 100vh;
+	margin: 50px  auto 0 auto;
+	background: linear-gradient(to top, #121FCF 0%, #CF1512 95%) no-repeat;
+	
+}
+.container{
+	text-align: center;
+}
+#input{
+	width: 350px;
+    padding: 20px 20px 20px 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #9b9b9b;
+    background: transparent;
+}
+#input::placeholder{
+	color: #9b9b9b;
+}
+.addTask button{
+	padding: 13px;
+    font-size: 20px;
+    background: black;
+    color: #d5d5d4;
+    border: 2px solid #161515;
+    border-radius: 8px;
+    font-weight: 550;
+}
+.notCompleted h3, .Completed h3{
+	font-size: 41px;
+    margin: 20px 0 20px 0px;
+    color: #d9d9d9;
+    font-family: 'Merriweather', serif;
+
+}
+li::marker{
+	color: #fffffffa;
+}
+.fa{
+	font-size: 22px;
+	color: black;
+	margin: 3px 10px;
+	color: white;
+}
+li{
+	background: #50d10e;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    font-family: 'Merriweather', serif;
+}
+li button{
+	float: right;
+	margin: -2px 0;
+	background: none;
+	outline: none;
+	border: none;
+}
+@media (max-width: 370px){
+	body{
+		width: 75%;
+	}
+	.addTask button{
+		padding: 5px;
+	    font-size: 20px;
+	    font-weight: 543;
+	    background: #b5b5b563;
+	    border: none;
+	}
+	.notCompleted h3, .Completed h3{
+		font-size: 12px;
+
+	}
+	ol{
+		width: 80%;
+    	margin: 0 auto;
+	}
+}
+@media (max-width: 480px){
+	
+	body{
+		width: 80%;
+		height: 100vh;
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	#input{
+		width: 78%;
+    	padding: 6px 8px 6px 1px;
+	}
+	#input::placeholder{
+		color: #9b9b9b;
+	    font-weight: 700;
+	}
+	#input[type="text"]{
+		color: #cbc6c6;
+	    font-weight: 700;
+	    letter-spacing: 2px;
+	}
+	.addTask button{
+		padding: 5px;
+	    font-size: 20px;
+	    font-weight: 543;
+	    background: #8b8b8b8c;
+	    border: none;
+	}
+	.notCompleted h3, .Completed h3{
+		font-size: 22px;
+
+	}
+	ol{
+		width: 80%;
+    	margin: 0 auto;
+	}
+	li {
+	    background: #5656564f;
+	}
+}
+@media screen and (max-width: 800px) and (min-width: 481px){
+	body{
+		width: 85%;
+		height: 100vh;
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	#input{
+		width: 78%;
+    	padding: 20px 8px 20px 1px;
+	}
+	#input::placeholder{
+		color: #9b9b9b;
+	    font-weight: 700;
+	}
+	#input[type="text"]{
+		color: #cbc6c6;
+	    font-weight: 700;
+	    letter-spacing: 2px;
+	}
+	.addTask button{
+		padding: 15px;
+	    font-size: 20px;
+	    font-weight: bold;
+	    background: #b5b5b563;
+	    border: none;
+	}
+	.notCompleted h3, .Completed h3{
+		font-size: 27px;
+
+	}
+	ol{
+		width: 80%;
+    	margin: 0 auto;
+	}
+	li {
+	    background: #1a19194f;
+	}
+	
+}
